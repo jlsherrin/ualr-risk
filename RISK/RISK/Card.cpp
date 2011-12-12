@@ -175,8 +175,6 @@ vector<Card> Card::getBestSet( vector<Card> cards, int player, vector<Territory>
 	return getRandomSet(cards);
 }
 
-
-
 /** A test of whether the array of cards contains at least one cashable set. */
 bool Card::containsASet( vector<Card> cards ){
 	if (cards.size() < 3)
@@ -209,6 +207,7 @@ bool Card::containsASet( vector<Card> cards ){
 	// Otherwise, we have no set:
 	return false;
 	}
+
  vector<Card> Card::getRandomSet( vector<Card> cards ){
 	vector<Card> toReturn;
 
